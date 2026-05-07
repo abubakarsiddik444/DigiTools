@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Studio",
+    "description": "Create polished blogs, product copy, and campaign content with guided AI templates.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": ["100+ templates", "SEO suggestions", "Export to PDF"],
+    "icon": "/assets/writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "Resume Builder Pro",
+    "description": "Build modern, ATS-friendly resumes and cover letters in minutes.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "Best Seller",
+    "features": ["ATS optimization", "Modern templates", "PDF download"],
+    "icon": "/assets/user.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Toolkit",
+    "description": "Plan, design, and organize social content for growing digital brands.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "New",
+    "features": ["Post templates", "Campaign planner", "Brand presets"],
+    "icon": "/assets/social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "Design Asset Pack",
+    "description": "A premium bundle of icons, UI blocks, and presentation-ready graphics.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "Popular",
+    "features": ["500+ UI assets", "Figma-ready files", "Commercial license"],
+    "icon": "/assets/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Portfolio Launcher",
+    "description": "Launch a responsive portfolio with curated sections and clean layouts.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "New",
+    "features": ["Responsive layouts", "Project gallery", "Contact section"],
+    "icon": "/assets/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Automation Hub",
+    "description": "Connect routine business tasks and keep your workflow moving smoothly.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "Best Seller",
+    "features": ["Workflow builder", "Team triggers", "Activity reports"],
+    "icon": "/assets/operation.png"
+  },
+  {
+    "id": 7,
+    "name": "Launch Kit",
+    "description": "Everything needed to prepare a digital product launch from idea to release.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "premium",
+    "tagType": "Premium",
+    "features": ["Launch checklist", "Email sequences", "Landing page copy"],
+    "icon": "/assets/rocket.png"
+  },
+  {
+    "id": 8,
+    "name": "Creator Bundle",
+    "description": "A complete package of digital resources for content creators and freelancers.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best value",
+    "tagType": "Best Value",
+    "features": ["All templates", "Priority updates", "Client-ready exports"],
+    "icon": "/assets/package.png"
+  }
+]
