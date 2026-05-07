@@ -1,5 +1,6 @@
 const Cart = ({ cart, handleRemove, handleCheckout }) => {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
+  const cartIcon = `${import.meta.env.BASE_URL}assets/shopping-cart.png`;
 
   return (
     <section className="mx-auto max-w-4xl rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8">
@@ -21,7 +22,7 @@ const Cart = ({ cart, handleRemove, handleCheckout }) => {
         <div className="grid min-h-64 place-items-center text-center">
           <div>
             <img
-              src="/assets/shopping-cart.png"
+              src={cartIcon}
               alt=""
               className="mx-auto size-14 opacity-50"
             />
@@ -40,7 +41,11 @@ const Cart = ({ cart, handleRemove, handleCheckout }) => {
             >
               <div className="flex items-center gap-4">
                 <div className="grid size-12 shrink-0 place-items-center rounded-xl bg-white">
-                  <img src={item.icon} alt="" className="size-7 object-contain" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}${item.icon}`}
+                    alt=""
+                    className="size-7 object-contain"
+                  />
                 </div>
 
                 <div>

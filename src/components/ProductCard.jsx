@@ -12,6 +12,7 @@ const ProductCard = ({ product, handleAddToCart }) => {
   const [buttonText, setButtonText] = useState("Buy Now");
   const { icon, name, description, price, period, features, tag, tagType } =
     product;
+  const iconSrc = `${import.meta.env.BASE_URL}${icon}`;
 
   const handleBuyNow = () => {
     handleAddToCart(product);
@@ -23,7 +24,7 @@ const ProductCard = ({ product, handleAddToCart }) => {
     <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="flex items-center justify-between gap-4">
         <div className="grid size-14 place-items-center rounded-2xl bg-slate-50">
-          <img src={icon} alt="" className="size-8 object-contain" />
+          <img src={iconSrc} alt="" className="size-8 object-contain" />
         </div>
 
         <span

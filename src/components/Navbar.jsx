@@ -1,5 +1,6 @@
 const Navbar = ({ cart }) => {
   const links = ["Products", "Features", "Pricing", "FAQ"];
+  const cartIcon = `${import.meta.env.BASE_URL}assets/shopping-cart.png`;
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
@@ -21,7 +22,7 @@ const Navbar = ({ cart }) => {
         <div className="flex items-center gap-4 ml-5">
           <div className="relative grid size-11 place-items-center rounded-full bg-violet-50">
             <img
-              src="/assets/shopping-cart.png"
+              src={cartIcon}
               alt="Cart"
               className="size-5 object-contain"
             />

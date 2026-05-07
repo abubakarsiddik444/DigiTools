@@ -2,17 +2,17 @@ const steps = [
   {
     title: "Create Account",
     text: "Sign up for free in seconds. No credit card required to get started.",
-    icon: "/assets/user.png",
+    icon: "assets/user.png",
   },
   {
     title: "Choose Products",
     text: "Browse our catalog and select the tools that fit your needs.",
-    icon: "/assets/package.png",
+    icon: "assets/package.png",
   },
   {
     title: "Start Creating",
     text: "Download and start using your premium tools immediately.",
-    icon: "/assets/rocket.png",
+    icon: "assets/rocket.png",
   },
 ];
 
@@ -41,7 +41,7 @@ const Steps = () => {
 
               <div className="mx-auto grid size-20 place-items-center rounded-full bg-violet-100 text-violet-600">
                 <img
-                  src={step.icon}
+                  src={`${import.meta.env.BASE_URL}${step.icon}`}
                   alt=""
                   className="size-10 object-contain"
                 />

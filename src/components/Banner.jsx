@@ -1,4 +1,6 @@
 const Banner = () => {
+  const bannerImage = `${import.meta.env.BASE_URL}assets/banner.png`;
+
   return (
     <section id="top" className="overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto grid min-h-[620px] items-center gap-12 px-4 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
@@ -12,8 +14,8 @@ const Banner = () => {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-slate-500 sm:text-lg">
-            Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products
-
+            Access premium AI tools, design assets, templates, and productivity
+            software all in one place. Start creating faster today.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -33,7 +35,7 @@ const Banner = () => {
         <div className="relative">
           <div className="absolute inset-6 rounded-[2rem] bg-violet-100" />
           <img
-            src="/assets/banner.png"
+            src={bannerImage}
             alt="DigiTools dashboard preview"
             className="relative mx-auto w-full max-w-[540px] rounded-[1.75rem] object-cover shadow-2xl shadow-violet-200/70"
           />

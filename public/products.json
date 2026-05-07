@@ -8,7 +8,7 @@
     "tag": "popular",
     "tagType": "Popular",
     "features": ["100+ templates", "SEO suggestions", "Export to PDF"],
-    "icon": "/assets/writing_2327400 1.png"
+    "icon": "assets/writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "best seller",
     "tagType": "Best Seller",
     "features": ["ATS optimization", "Modern templates", "PDF download"],
-    "icon": "/assets/user.png"
+    "icon": "assets/user.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "new",
     "tagType": "New",
     "features": ["Post templates", "Campaign planner", "Brand presets"],
-    "icon": "/assets/social-media.png"
+    "icon": "assets/social-media.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "popular",
     "tagType": "Popular",
     "features": ["500+ UI assets", "Figma-ready files", "Commercial license"],
-    "icon": "/assets/design-tool.png"
+    "icon": "assets/design-tool.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "new",
     "tagType": "New",
     "features": ["Responsive layouts", "Project gallery", "Contact section"],
-    "icon": "/assets/portfolio.png"
+    "icon": "assets/portfolio.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "best seller",
     "tagType": "Best Seller",
     "features": ["Workflow builder", "Team triggers", "Activity reports"],
-    "icon": "/assets/operation.png"
+    "icon": "assets/operation.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "premium",
     "tagType": "Premium",
     "features": ["Launch checklist", "Email sequences", "Landing page copy"],
-    "icon": "/assets/rocket.png"
+    "icon": "assets/rocket.png"
   },
   {
     "id": 8,
@@ -85,6 +85,6 @@
     "tag": "best value",
     "tagType": "Best Value",
     "features": ["All templates", "Priority updates", "Client-ready exports"],
-    "icon": "/assets/package.png"
+    "icon": "assets/package.png"
   }
 ]

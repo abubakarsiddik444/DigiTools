@@ -16,7 +16,7 @@ function App() {
   const [showCart, setShowCart] = useState(false);
 
   useEffect(() => {
-    fetch("/products.json")
+    fetch(`${import.meta.env.BASE_URL}products.json`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
