@@ -14,8 +14,8 @@ const Banner = () => {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-slate-500 sm:text-lg">
-            Access premium AI tools, design assets, templates, and productivity
-            software all in one place. Start creating faster today.
+            Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today. Explore Products
+
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

@@ -2,80 +2,120 @@ const plans = [
   {
     name: "Starter",
     price: "$0",
-    note: "For exploring the platform",
-    features: ["Browse all tools", "Community support", "Free resources"],
+    note: "Perfect for getting started",
+    features: [
+      "Access to 10 free tools",
+      "Basic templates",
+      "Community support",
+      "1 project per month",
+    ],
+    button: "Get Started Free",
   },
   {
     name: "Pro",
     price: "$29",
-    note: "For regular creators",
-    features: ["Premium templates", "Monthly updates", "Priority support"],
+    note: "Best for professionals",
+    features: [
+      "Access to all premium tools",
+      "Unlimited templates",
+      "Priority support",
+      "Unlimited projects",
+      "Cloud sync",
+      "Advanced analytics",
+    ],
+    button: "Start Pro Trial",
     featured: true,
   },
   {
     name: "Enterprise",
     price: "$99",
-    note: "For growing teams",
-    features: ["Team access", "Custom bundles", "Dedicated support"],
+    note: "For teams and businesses",
+    features: [
+      "Everything in Pro",
+      "Team collaboration",
+      "Custom integrations",
+      "Dedicated support",
+      "SLA guarantee",
+      "Custom branding",
+    ],
+    button: "Contact Sales",
   },
 ];
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-16 sm:py-20">
-      <div className="max-w-6xl mx-auto px-4">
+    <section id="pricing" className="bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-5xl px-4">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">
-            Pricing
-          </p>
-          <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">
-            Flexible Plans for Every Workflow
+          <h2 className="text-3xl font-black text-[#111827] sm:text-4xl">
+            Simple, Transparent Pricing
           </h2>
+          <p className="mt-3 text-xs text-slate-500">
+            Choose the plan that fits your needs. Upgrade or downgrade anytime.
+          </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
           {plans.map((plan) => (
             <article
               key={plan.name}
-              className={`rounded-2xl border p-6 shadow-sm ${
+              className={`relative rounded-xl border p-5 shadow-sm ${
                 plan.featured
-                  ? "border-violet-500 bg-violet-600 text-white"
-                  : "border-slate-200 bg-white text-slate-950"
+                  ? "border-violet-600 bg-gradient-to-br from-[#5d39ff] to-[#b30df5] text-white"
+                  : "border-slate-200 bg-slate-50 text-slate-900"
               }`}
             >
-              <h3 className="text-2xl font-bold">{plan.name}</h3>
+              {plan.featured && (
+                <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-200 px-4 py-1 text-xs font-semibold text-yellow-800">
+                  Most Popular
+                </span>
+              )}
+
+              <h3 className="text-lg font-bold">{plan.name}</h3>
               <p
-                className={`mt-2 text-sm ${
+                className={`mt-2 text-xs ${
                   plan.featured ? "text-violet-100" : "text-slate-500"
                 }`}
               >
                 {plan.note}
               </p>
 
-              <div className="mt-6">
-                <span className="text-5xl font-black">{plan.price}</span>
-                <span className={plan.featured ? "text-violet-100" : "text-slate-400"}>
-                  /mo
+              <div className="mt-5 flex items-end">
+                <span className="text-4xl font-black leading-none">
+                  {plan.price}
+                </span>
+                <span
+                  className={`text-sm ${
+                    plan.featured ? "text-violet-100" : "text-slate-500"
+                  }`}
+                >
+                  /Month
                 </span>
               </div>
 
-              <ul className="mt-8 space-y-3 text-sm font-medium">
+              <ul className="mt-6 space-y-2 text-xs font-medium">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex gap-2">
-                    <span>{plan.featured ? "+" : "-"}</span>
+                  <li key={feature} className="flex items-start gap-2">
+                    <span
+                      className={
+                        plan.featured ? "text-white" : "text-emerald-500"
+                      }
+                    >
+                      ✓
+                    </span>
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <button
-                className={`btn mt-8 w-full rounded-full ${
+                className={`btn mt-6 min-h-0 h-10 w-full rounded-full border-none text-xs font-bold ${
                   plan.featured
-                    ? "border-none bg-white text-violet-700 hover:bg-violet-50"
-                    : "btn-outline"
+                    ? "bg-white text-violet-700 hover:bg-violet-50"
+                    : "bg-gradient-to-r from-[#5d39ff] to-[#b30df5] text-white hover:opacity-90"
                 }`}
               >
-                Choose Plan
+                {plan.button}
               </button>
             </article>
           ))}

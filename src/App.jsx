@@ -69,16 +69,14 @@ function App() {
         }`}
       >
         <div className={`text-center ${showCart ? "mb-10" : "mb-14"}`}>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-violet-600">
-            Digital Marketplace
-          </p>
+          
 
           <h2 className="mt-3 text-3xl sm:text-5xl font-bold text-[#111827]">
             Premium Digital Tools
           </h2>
 
           <p className="text-sm sm:text-base text-gray-500 mt-3">
-            Choose from our curated collection of premium digital products.
+            Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-8">
